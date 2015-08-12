@@ -7,9 +7,13 @@
 
 Responsive HTML5 & CSS3 template.
 
+## Demo
+Index page: http://domons.github.io/Vilio-Theme/
+Service page: http://domons.github.io/Vilio-Theme/service.html
+
 ---
 
-`Main page:`
+`Index page:`
 ![Vilio Theme](/psd/index.jpg)
 
 `Service page:`
