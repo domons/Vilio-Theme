@@ -14,14 +14,7 @@ Service page: http://domons.github.io/Vilio-Theme/service.html
 
 ---
 
-<<<<<<< HEAD
-`Main page:`
 ![Vilio Theme](/psd/preview.jpg)
-=======
-`Index page:`
-![Vilio Theme](/psd/index.jpg)
->>>>>>> f13e10f8046b3c3a4c5717908bb8c46be3676ac3
-
 
 ## How to install/use
 - If you haven't [compass](http://compass-style.org/) or [jade](http://jade-lang.com/) on your computer, install it.
