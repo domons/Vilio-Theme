@@ -1,0 +1,59 @@
+/* Services */
+.services {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin:90px 0 50px;
+}
+
+.service {
+	width:30%;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+	.fa {
+		font-size:100px;
+		color:#d5d9e2;
+	}
+
+	h2 {
+		color:#151c2b;
+		font-size:24px;
+		font-weight:300;
+		margin:25px 0;
+	}
+
+	.fa, h2 { transition:all .3s ease-in-out; }
+
+	p {
+		color:#5b667d;
+	 	line-height:1.7;
+	 	font-size:15px;
+	 	font-weight:300;
+	}
+
+	.btn-small {
+		order:2;
+		margin:25px 0;
+	}
+
+  	.btn-small:hover ~ .fa,
+  	.btn-small:hover ~ h2 {
+		color:$primaryColor;
+	}
+}
+
+@media (max-width:800px) {
+  	.services {
+  		flex-direction:column;
+  		margin:30px 0;
+  	}
+
+  	.service {
+		width:100%;
+		margin:15px 0;
+  	}
+}
+

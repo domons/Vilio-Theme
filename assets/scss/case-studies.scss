@@ -1,0 +1,99 @@
+/* Case studies */
+.case-studies {
+	background:#f9fafb;
+	padding:40px 0 0;
+
+	footer {
+		border-top:1px solid #dbe3ea;
+		overflow:hidden;
+		padding:35px 0;
+		margin-top:40px;
+		min-height:150px;
+
+		.contact-bar {
+			background:none;
+
+			p {
+				color:#151c2b;
+			}
+
+			.btn-outline-white {
+				@extend .btn-outline-primary;
+			}
+			.btn-hover-outline-white {
+				@extend .btn-hover-outline-primary;
+			}
+			.btn-hover-fill {
+				@extend .btn-hover-fill;
+			}
+
+			.center {
+				padding:0;
+			}
+		}
+	}
+}
+
+.owl-nav {
+	text-align:center;
+	margin-top:30px;
+
+	> div {
+		display:inline-block;
+		margin:0 10px;
+		cursor:pointer;
+	}
+}
+
+.case-studies-panels {
+
+	.owl-stage {
+		display:flex;
+		flex-direction:row;
+	}
+}
+
+.case-panel {
+	background:#fff;
+	border:1px solid #eaeaea;
+	border-bottom:2px solid $primaryColor;
+	border-radius:5px;
+	overflow:hidden;
+	height:100%;
+
+	.case-img {
+		width:100%;
+		height:0;
+		padding-bottom:55%;
+		background-position:center top;
+		background-size:cover;
+		transition:all 1s ease-in-out;
+	}
+
+	&:hover .case-img {
+		background-position:center bottom;
+	}
+
+	.case-cnt {
+		padding:20px;
+
+		h3 {
+			font-size:2.4rem;
+			color:$primaryColor;
+			font-weight:300;
+		}
+
+		em {
+			font-size:1.4rem;
+			font-weight:600;
+			margin-top:10px;
+			display:block;
+		}
+
+		p {
+			font-size:1.4rem;
+			line-height:1.6;
+			margin:20px 0;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+/* Partners */
+.partners {
+	text-align:center;
+	background:#fafbfd;
+
+	li {
+		display:inline-block;
+		vertical-align:middle;
+		margin:20px 40px;
+
+		@media (max-width:700px) {
+			margin:15px 12px;
+		}
+	}
+
+	a {
+		filter:grayscale(100%);
+		-webkit-filter:grayscale(100%);
+		opacity:0.3;
+		transition:all .3s ease-in-out;
+
+		&:hover {
+			opacity:1;
+			filter:grayscale(0%);
+			-webkit-filter:grayscale(0%);
+		}
+	}
+}
+
+.skew-section-content .partners {
+	position:relative;
+
+	&:before,
+	&:after {
+		position:absolute;
+		content:'';
+		background:#fafbfd;
+		height:100%;
+		top:0;
+	}
+
+	&:before {
+	  	width:50%;
+		left:-76px;
+		transform:skew(-45deg);
+
+		@media (max-width:1200px) {
+		  	transform:skew(0deg);
+		}
+	}
+
+	&:after {
+		width:100%;
+		right:-100%;
+		z-index:9;
+	}
+}

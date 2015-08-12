@@ -1,0 +1,19 @@
+mixin timeline_item(heading, caption)
+	.timeline-item
+		.timeline-item-container
+			h3= heading
+			p= caption
+
+section.center
+	header.header-caption
+		h2.heading Our process
+		em.caption We will help you develop your ideas into concepts and faciliate the process with dedicated account managementto execution and beyond.
+
+	.timeline-process.clearfix
+		+timeline_item('5. Launch Live', 'Our strength is combining creative force with executive ability. We provide new opportunities, implement innovative visions and facilitate business processes.')
+		+timeline_item('4. Testing', 'Our strength is combining creative force with executive ability. We provide new opportunities, implement innovative visions and facilitate business processes.')
+		+timeline_item('3. Development', 'Our strength is combining creative force with executive ability. We provide new opportunities, implement innovative visions and facilitate.')
+		+timeline_item('2. Wireframe & Design', 'Our strength is combining creative force with executive ability. We provide new opportunities, implement innovative visions and facilitate business processes.')
+		+timeline_item('1. Research & Planning', 'Our strength is combining creative force with executive ability. We provide new opportunities, implement innovative visions.')
+		.check-icon: i.fa.fa-check
+

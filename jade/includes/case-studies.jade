@@ -1,0 +1,25 @@
+mixin case_item(img, title, category, snippet, url)
+	.case-panel
+		.case-img(style="background-image:url("+img+")")
+		.case-cnt
+			h3= title
+			em= category
+			p= snippet
+			a(href=url).btn-small.btn-outline-primary.btn-hover-fill Read more
+
+section.case-studies
+	.center
+		header.header-caption
+			h2.heading Case studies
+			em.caption Take a look at our happy customers!
+
+		.case-studies-panels
+			+case_item('//placeimg.com/640/480/any', 'One Tree', 'Social Media Marketing', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+			+case_item('//placeimg.com/640/480/animals', 'Verseca Inc.', 'Branding', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+			+case_item('//placeimg.com/640/480/architecture', 'Querry Ltd', 'Web Development', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+			+case_item('//placeimg.com/640/480/nature', 'K2 Group', 'Online Marketing', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+			+case_item('//placeimg.com/640/480/people', 'Perform Media', 'Web Development', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+			+case_item('//placeimg.com/640/480/tech', 'Vilio Theme', 'github.com/domons', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
+
+		footer
+			include contact-bar

@@ -1,0 +1,128 @@
+/* Timeline process */
+.timeline-process {
+	position:relative;
+	margin-top:40px;
+
+  	@media(min-width:800px) {
+		&:before {
+			background:linear-gradient(to bottom, $secondaryColor 0%, #d9dfeb 90%);
+			width:1px;
+			height:calc(100% - 60px);
+			position:absolute;
+			top:60px;
+			left:50%;
+			margin-left:-1px;
+			content:'';
+			display:block;
+		}
+	}
+
+	.check-icon {
+		position:absolute;
+		top:22px;
+		left:50%;
+		margin-left:-19px;
+		background:$secondaryColor;
+		color:#fff;
+		opacity:0.3;
+		width:38px;
+		height:38px;
+		border-radius:50%;
+		text-align:center;
+		line-height:38px;
+		vertical-align:middle;
+		font-size:20px;
+
+		@media(max-width:799px) {
+		  	display:none;
+		}
+	}
+}
+
+
+.timeline-item-container {
+	border:1px solid #d9dfeb;
+	border-bottom:3px solid $secondaryColor;
+	padding:30px;
+	position:relative;
+	border-radius:3px;
+
+	h3 {
+		color:$secondaryColor;
+		font-size:2.4rem;
+		font-weight:300;
+		margin-bottom:20px;
+	}
+
+	p {
+		color:#5b667d;
+		font-size:14px;
+		line-height:1.7;
+	}
+
+	@media(min-width:800px) {
+		&:before, &:after {
+			position:absolute;
+			content:'';
+			border:14px solid transparent;
+			top:25px;
+		}
+
+		&:before { border-left-color:#d9dfeb; }
+		&:after { border-left-color:#fff; }
+	}
+}
+
+.timeline-item {
+  	position:relative;
+  	float:left;
+  	margin:0 0 30px 0;
+
+  	@media(min-width:800px) {
+		width:calc(50% - 40px);
+	  	margin:55px 0;
+
+		&:after {
+			width:10px;
+			height:10px;
+			border:1px solid $secondaryColor;
+			position:absolute;
+			content:'';
+			top:33px;
+			border-radius:50%;
+			background:#fff;
+		}
+
+		&:nth-of-type(odd):after { right:-46px; }
+		&:nth-of-type(even):after { left:-46px; }
+
+
+		&:nth-of-type(even) {
+			float:right;
+
+			.timeline-item-container:before , .timeline-item-container:after { transform:rotate(-180deg); }
+			.timeline-item-container:before { left:-29px; }
+			.timeline-item-container:after { left:-28px; }
+		}
+
+		&:nth-of-type(odd) .timeline-item-container {
+			text-align:right;
+
+			&:before { right:-29px; }
+			&:after { right:-28px; }
+		}
+
+		@for $i from 1 through 4 {
+			&:nth-of-type(#{$i}) .timeline-item-container {
+				opacity:$i * 0.2;
+			}
+		}
+
+		&:first-of-type { margin-top:0; }
+		&:nth-of-type(2) { margin-top:130px; }
+		&:last-of-type { margin-bottom:0; }
+	}
+
+	&:first-of-type:after { display:none; }
+
+}

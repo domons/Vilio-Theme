@@ -1,0 +1,10 @@
+/* TEAM */
+Front-end developer: Dominik Barylski
+Site: http://domons.net
+Email: barylski.dominik@gmail.com
+Location: Lodz, Poland
+
+Web designer: David Tkocz
+Site: https://www.linkedin.com/in/davidtkocz
+Email: david@vilio.uk
+Location: Glasgow, UK

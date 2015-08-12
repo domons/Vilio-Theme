@@ -1,0 +1,27 @@
+mixin location_item(slug, city)
+	.location(class=slug)
+		.location-img
+		.location-cnt
+			img(src="assets/images/logo.png" alt="Vilio Theme")
+			h2= city
+			a(href="#").btn-small.btn-outline-white.btn-hover-fill Contact us
+
+
+section.locations-section.clearfix
+	+location_item('new-york', 'New York')
+	+location_item('los-angeles', 'Los Angeles')
+
+	.cta-bar
+		i.fa.fa-commenting-o
+		span Would you like to join us? <a href="#" class="underline">Let's chat about you!</a>
+
+	.instagram-tiles
+		a(href="#"): img(src="//placeimg.com/150/150" alt="")
+		a(href="#"): img(src="//placeimg.com/150/150/any" alt="")
+		a(href="#"): img(src="//placeimg.com/150/150/animals" alt="")
+		a(href="#"): img(src="//placeimg.com/150/150/architecture" alt="")
+		a(href="#"): span.follow
+			i.fa.fa-instagram
+			strong Follow us
+		a(href="#"): img(src="//placeimg.com/150/150/people" alt="")
+		a(href="#"): img(src="//placeimg.com/150/150/tech" alt="")

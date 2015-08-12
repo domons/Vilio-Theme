@@ -1,0 +1,157 @@
+/* Footer */
+#body {
+	position:relative;
+	top:0;
+	left:0;
+	z-index:2;
+	background:#fff;
+	margin-bottom:300px;
+	box-shadow:0 0 50px 10px #131928;
+}
+
+.main-footer {
+	background:#131928;
+	padding:25px 0;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	min-height:300px;
+
+	.center {
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+	}
+
+	.panel {
+		margin:25px 0;
+		h2 {
+			color:#fff;
+			font-size:2.2rem;
+			font-weight:300;
+			margin-bottom:30px;
+		}
+	}
+
+	a {
+		color:#464d5e;
+		transition:all .2s ease-in-out;
+		&:hover { color:$primaryColor; }
+	}
+}
+
+.sitemap-panel { width:200px; }
+.photos-panel { width:290px; }
+.careers-panel { width:270px; }
+
+@media (max-width:1070px) {
+	#body { margin-bottom:0; }
+	.main-footer {
+		position:relative;
+
+		.center {
+			flex-flow:row wrap;
+		}
+
+		.panel {
+			width:46%;
+		}
+	}
+}
+
+@media (max-width:600px) {
+  	.main-footer .panel {
+		width:100%;
+		text-align:center;
+  	}
+}
+
+
+.socialmedia-panel {
+
+	.socialmedia {
+		margin-bottom:20px;
+
+		li {
+			margin:0 5px 0 0;
+		}
+
+		a {
+			width:30px;
+			height:30px;
+			font-size:16px;
+			line-height:28px;
+
+			&:hover { color:$secondaryColor; }
+		}
+	}
+}
+
+
+.photos-thumbs {
+
+	li {
+		display:inline-block;
+		margin:0 4px 12px 4px;
+	}
+
+	img { border-radius:4px; }
+	a:hover { opacity:0.6; }
+}
+
+.links-list {
+
+	li {
+		margin:8px 0;
+	}
+}
+
+.careers-list {
+
+	li {
+		border-bottom:1px solid #1e2332;
+	}
+
+	a {
+		display:block;
+		overflow:hidden;
+		padding:12px 0;
+		line-height:19px;
+		vertical-align:middle;
+	}
+
+	span {
+		float:left;
+		width:36px;
+		height:19px;
+		color:#fff;
+		font-size:13px;
+		font-weight:300;
+		text-align:center;
+		border-radius:3px;
+		background:$primaryColor;
+		line-height:19px;
+		vertical-align:middle;
+		text-transform:uppercase;
+	}
+
+	h3 {
+		float:left;
+		padding:0 10px;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		width:calc(100% - 60px);
+	}
+
+	.fa {
+		float:right;
+		margin-top:2px;
+	}
+
+	li.secondary {
+	  	span { background:$secondaryColor; }
+	  	a:hover { color:$secondaryColor; }
+	}
+}

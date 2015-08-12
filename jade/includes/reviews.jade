@@ -1,0 +1,13 @@
+mixin review_item(text, person, position, logo)
+	.review-item
+		p= text
+		h2= person
+		h3= position
+		img(src=logo alt="").logo
+
+.reviews-section.center
+	i.fa.fa-thumbs-up
+	.reviews-carousel
+		+review_item('They knowledge & enthusiasm is inspiring & they consistently deliver a high level of service', 'John Smith', 'Marketing Director', 'assets/images/examples/blackberry.png')
+		+review_item('They knowledge & enthusiasm is inspiring & they consistently deliver a high level of service', 'John Smith', 'Marketing Director', 'assets/images/examples/blackberry.png')
+		+review_item('They knowledge & enthusiasm is inspiring & they consistently deliver a high level of service', 'John Smith', 'Marketing Director', 'assets/images/examples/blackberry.png')

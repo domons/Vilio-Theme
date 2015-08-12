@@ -1,0 +1,32 @@
+/* Twitter panel */
+.twitter-panel {
+  	padding:25px;
+  	min-height:150px;
+  	display:flex;
+  	flex-direction:row;
+
+	.fa-twitter {
+		color:$secondaryColor;
+		font-size:36px;
+		margin:15px 30px 0 0;
+		display:inline-block;
+	}
+
+}
+
+.twitter-post {
+	font-size:2rem;
+	line-height:1.5;
+	font-weight:300;
+
+	@media (min-width:1501px) {
+	  	padding-right:150px;
+	}
+
+	span {
+		font-size:1.4rem;
+		margin-top:15px;
+		display:inline-block;
+	}
+}
+

@@ -1,0 +1,265 @@
+.header-container {
+	width:100%;
+	background:url(../images/header-bg.jpg) center bottom no-repeat #141a2b;
+	background-size:cover;
+  	background-attachment:fixed;
+  	padding-bottom:30px;
+	position:relative;
+
+	&.big-header {
+		background-position:center top;
+		min-height:1400px;
+		overflow:hidden;
+	}
+
+	.big-header-wrapper {
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+	}
+
+	@media (max-width:900px) {
+		.big-header-wrapper { position:relative; }
+		&.big-header { min-height:0px; padding-bottom:610px; }
+	}
+}
+
+/* Main header */
+.main-header {
+
+	.upper-bar {
+		border-bottom:1px solid rgba(#fff,0.11);
+		overflow:hidden;
+		padding:15px 0;
+
+		p {
+			color:#6e758e;
+			font-size:1.4rem;
+			float:left;
+			line-height:24px;
+			vertical-align:middle;
+			a {
+				color:#fff;
+			}
+		}
+		
+		@media (max-width:850px) {
+		  	display:none;
+		}
+	}
+
+	.socialmedia {
+	  	float:right;
+	}
+
+	.header-proper {
+	 	margin:25px 0 0 0;
+	}
+
+	h1 {
+		float:left;
+		background:url(../images/logo.png);
+		width:172px;
+		height:54px;
+		font:0/0 a;
+		color:transparent;
+	}
+
+	/* Main nav */
+	nav {
+		float:right;
+
+		> ul {
+			a {
+				transition:all .2s ease-in-out;
+			}
+
+			> li {
+				display:inline-block;
+				position:relative;
+				margin:0 5px;
+
+				> a {
+					color:#fff;
+					font-size:1.7rem;
+					padding:12px 15px;
+				  	display:inline-block;
+
+				  	&.active:before {
+						width:100%;
+						height:3px;
+						background:$primaryColor;
+						content:'';
+						position:absolute;
+						display:block;
+						bottom:-3px;
+						left:0;
+						z-index:6;
+						border-radius:4px;
+				  	}
+				}
+
+				.fa.fa-caret-down {
+					font-size:12px;
+					margin:0 0 0 5px;
+					display:inline-block;
+				}
+
+				&:hover > a {
+					background:#15192c;
+					color:$primaryColor;
+				}
+
+				// submenu
+				> ul {
+					visibility:hidden;
+					opacity:0;
+					position:absolute;
+					background:rgba(#15192c, 0.95);
+					padding:15px 10px;
+				  	transition:all .2s ease-in-out;
+				  	top:50%;
+				  	z-index:50;
+
+					> li {
+
+					}
+
+					a {
+						color:#67708d;
+						font-size:1.4rem;
+						padding:7px 80px 7px 5px;
+						display:block;
+						white-space:nowrap;
+
+						&:hover {
+							color:$primaryColor;
+						}
+					}
+				}
+
+				&:hover > ul {
+					visibility:visible;
+					opacity:1;
+				  	top:100%;
+				}
+			}
+		}
+	}
+
+  	/* Mobile nav */
+	.mobile-nav-toggle {
+		color:#fff;
+		float:right;
+		font-size:32px;
+		padding:5px 10px;
+		cursor:pointer;
+		display:none;
+		margin-top:5px;
+		transition:all .2s ease-in-out;
+
+		&.fa-times {
+			position:fixed;
+			z-index:550;
+			top:25px;
+			right:25px;
+		}
+
+	  	&:hover { color:$primaryColor; }
+	}
+
+	@media (max-width:850px) {
+	  	nav {
+			position:fixed;
+			top:0;
+			width:100%;
+			height:100%;
+			background:#141a2b;
+			z-index:500;
+			visibility:hidden;
+			opacity:0;
+			left:-100%;
+			transition:all .3s ease-in-out;
+
+			ul {
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				height:100%;
+
+				> li > a .fa.fa-caret-down,
+				> li > ul { display:none; }
+
+				> li {
+					margin:7px 0;
+				}
+			}
+
+			&.show {
+				visibility:visible;
+				opacity:1;
+				left:0;
+			}
+	  	}
+
+	  	.mobile-nav-toggle {
+	  		display:block;
+	  	}
+	}
+}
+
+/* Big header canvas chart */
+.header-chart {
+	position:absolute;
+	top:150px;
+	left:-20px;
+	right:-20px;
+	bottom:0;
+
+	canvas {
+	  	width:100%;
+		height:100%;
+	}
+
+	@media (max-width:900px) {
+	  	display:none;
+	}
+}
+
+/* Big header content */
+.header-hero {
+	width:48%;
+	margin:80px 0 0 0;
+	position:relative;
+	z-index:10;
+
+	h2 {
+		font-size:4.6rem;
+		color:#fff;
+		font-weight:bold;
+	  	line-height:1.3;
+
+		em {
+			font-size:3.8rem;
+			font-weight:100;
+			font-style:normal;
+			display:block;
+		}
+	}
+
+	p {
+		font-size:1.8rem;
+		color:#919bbf;
+		line-height:1.6;
+		margin:30px 0 50px;
+		font-weight:300;
+	}
+
+	.btn-large { margin:0 20px 20px 0; }
+
+	@media (max-width:900px) {
+	  	width:100%;
+	}
+}
