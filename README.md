@@ -35,6 +35,3 @@ You can use the project anywise you want to, but **don't remove** the informatio
 
 `<link type="text/plain" rel="author" href="humans.txt">`
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/domons/vilio-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
