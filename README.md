@@ -7,8 +7,9 @@
 
 Responsive HTML5 & CSS3 template.
 
-## Demo
+### Demo
 Index page: http://domons.github.io/Vilio-Theme/
+
 Service page: http://domons.github.io/Vilio-Theme/service.html
 
 ---
