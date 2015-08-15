@@ -868,8 +868,8 @@ p b, p strong {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 .service .fa {
   font-size: 100px;
