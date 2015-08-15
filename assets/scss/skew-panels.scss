@@ -24,8 +24,8 @@
 	}
 
 	&:before {
-	  	@include transform(skew(-45deg));
 		left:-25%;
+	  	@include transform(skew(-45deg));
 	}
 
 	&:after {
@@ -58,10 +58,10 @@
 		width:100%;
 		height:100%;
 		background:#0f1320;
-	  	@include transform(skew(-45deg));
 		top:0;
 		left:55%;
 		z-index:2;
+	  	@include transform(skew(-45deg));
 	}
 
 	&:after {

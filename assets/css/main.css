@@ -133,13 +133,13 @@ p b, p strong {
   width: 24px;
   height: 24px;
   border: 1px solid #454c5d;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   font-size: 13px;
   text-align: center;
   line-height: 22px;
   vertical-align: middle;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -152,10 +152,10 @@ p b, p strong {
 
 /* Buttons */
 .btn, .btn-small, .btn-medium, .btn-large {
+  display: inline-block;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  display: inline-block;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -510,12 +510,12 @@ p b, p strong {
   position: absolute;
   background: rgba(21, 25, 44, 0.95);
   padding: 15px 10px;
+  top: 50%;
+  z-index: 50;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  top: 50%;
-  z-index: 50;
 }
 .main-header nav > ul > li > ul a {
   color: #67708d;
@@ -571,13 +571,15 @@ p b, p strong {
     transition: all 0.3s ease-in-out;
   }
   .main-header nav ul {
+    height: 100%;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    height: 100%;
   }
   .main-header nav ul > li > a .fa.fa-caret-down,
   .main-header nav ul > li > ul {
@@ -673,11 +675,11 @@ p b, p strong {
   top: 0;
 }
 .skew-section:before {
+  left: -25%;
   -moz-transform: skew(-45deg);
   -ms-transform: skew(-45deg);
   -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
-  left: -25%;
 }
 .skew-section:after {
   right: -100%;
@@ -707,13 +709,13 @@ p b, p strong {
   width: 100%;
   height: 100%;
   background: #0f1320;
+  top: 0;
+  left: 55%;
+  z-index: 2;
   -moz-transform: skew(-45deg);
   -ms-transform: skew(-45deg);
   -webkit-transform: skew(-45deg);
   transform: skew(-45deg);
-  top: 0;
-  left: 55%;
-  z-index: 2;
 }
 .double-skew-panel:after {
   width: 100%;
@@ -850,13 +852,13 @@ p b, p strong {
 
 /* Services */
 .services {
+  margin: 90px 0 50px;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: 90px 0 50px;
 }
 
 .service {
@@ -902,9 +904,9 @@ p b, p strong {
 
 @media (max-width: 800px) {
   .services {
+    margin: 30px 0;
     -webkit-flex-direction: column;
     flex-direction: column;
-    margin: 30px 0;
   }
 
   .service {
@@ -955,11 +957,11 @@ p b, p strong {
   background: #fff;
   border: 1px solid #eaeaea;
   border-bottom: 2px solid #1ab282;
+  overflow: hidden;
+  height: 100%;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  overflow: hidden;
-  height: 100%;
 }
 .case-panel .case-img {
   width: 100%;
@@ -1275,11 +1277,11 @@ p b, p strong {
 }
 .reviews-carousel .review-next:before,
 .reviews-carousel .review-prev:before {
+  top: 12px;
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 12px;
 }
 .reviews-carousel .review-next:hover:before, .reviews-carousel .review-next:hover:after,
 .reviews-carousel .review-prev:hover:before,
@@ -1442,13 +1444,13 @@ p b, p strong {
   font-size: 13px;
   font-weight: 300;
   text-align: center;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   background: #1ab282;
   line-height: 19px;
   vertical-align: middle;
   text-transform: uppercase;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .careers-list h3 {
   float: left;
@@ -1615,13 +1617,13 @@ p b, p strong {
   opacity: 0.3;
   width: 38px;
   height: 38px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   text-align: center;
   line-height: 38px;
   vertical-align: middle;
   font-size: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 @media (max-width: 799px) {
   .timeline-process .check-icon {
@@ -1681,10 +1683,10 @@ p b, p strong {
     position: absolute;
     content: '';
     top: 33px;
+    background: #fff;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #fff;
   }
   .timeline-item:nth-of-type(odd):after {
     right: -46px;

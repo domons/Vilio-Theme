@@ -118,9 +118,9 @@
 					position:absolute;
 					background:rgba(#15192c, 0.95);
 					padding:15px 10px;
-				  	@include single-transition(all, .2s, ease-in-out);
 				  	top:50%;
 				  	z-index:50;
+				  	@include single-transition(all, .2s, ease-in-out);
 
 					> li {
 
@@ -183,11 +183,11 @@
 		  	@include single-transition(all, .3s, ease-in-out);
 
 			ul {
+			 	height:100%;
 				@include display-flex;
 				@include flex-direction(column);
-				align-items:center;
-				justify-content:center;
-				height:100%;
+				@include align-items(center);
+				@include justify-content(center);
 
 				> li > a .fa.fa-caret-down,
 				> li > ul { display:none; }

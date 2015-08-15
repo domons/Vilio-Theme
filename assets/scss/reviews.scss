@@ -44,8 +44,8 @@
 		}
 
 		&:before {
+		  	top:12px;
 		  	@include transform(rotate(-45deg));
-			top:12px;
 		}
 
 		&:hover:before,

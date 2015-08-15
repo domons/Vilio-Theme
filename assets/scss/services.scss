@@ -1,9 +1,9 @@
 /* Services */
 .services {
+  	margin:90px 0 50px;
 	@include display-flex;
 	@include flex-direction(row);
 	@include justify-content(space-between);
-	margin:90px 0 50px;
 }
 
 .service {
@@ -49,8 +49,8 @@
 
 @media (max-width:800px) {
   	.services {
+	  	margin:30px 0;
 	  	@include flex-direction(column);
-  		margin:30px 0;
   	}
 
   	.service {

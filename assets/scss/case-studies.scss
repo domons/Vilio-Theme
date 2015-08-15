@@ -57,9 +57,9 @@
 	background:#fff;
 	border:1px solid #eaeaea;
 	border-bottom:2px solid $primaryColor;
-  	@include border-radius(5px);
 	overflow:hidden;
 	height:100%;
+  	@include border-radius(5px);
 
 	.case-img {
 		width:100%;
@@ -67,7 +67,7 @@
 		padding-bottom:55%;
 		background-position:center top;
 		background-size:cover;
-	 	 @include single-transition(all, 1s, ease-in-out);
+	 	@include single-transition(all, 1s, ease-in-out);
 	}
 
 	&:hover .case-img {

@@ -67,11 +67,11 @@ p b, p strong {
 		width:24px;
 		height:24px;
 		border:1px solid #454c5d;
-	  	@include border-radius(50%);
 		font-size:13px;
 		text-align:center;
 		line-height:22px;
 		vertical-align:middle;
+	  	@include border-radius(50%);
 	  	@include single-transition(all, .2s, ease-in-out);
 
 		&:hover {
@@ -83,8 +83,8 @@ p b, p strong {
 
 /* Buttons */
 .btn {
+  	display:inline-block;
   	@include border-radius(4px);
-	display:inline-block;
   	@include single-transition(all, .2s, ease-in-out);
 }
 

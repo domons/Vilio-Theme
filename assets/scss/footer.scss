@@ -129,11 +129,11 @@
 		font-size:13px;
 		font-weight:300;
 		text-align:center;
-	  	@include border-radius(3px);
 		background:$primaryColor;
 		line-height:19px;
 		vertical-align:middle;
 		text-transform:uppercase;
+	  	@include border-radius(3px);
 	}
 
 	h3 {
