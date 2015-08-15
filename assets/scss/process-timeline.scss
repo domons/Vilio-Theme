@@ -27,7 +27,7 @@
 		opacity:0.3;
 		width:38px;
 		height:38px;
-		border-radius:50%;
+	  	@include border-radius(50%);
 		text-align:center;
 		line-height:38px;
 		vertical-align:middle;
@@ -45,7 +45,7 @@
 	border-bottom:3px solid $secondaryColor;
 	padding:30px;
 	position:relative;
-	border-radius:3px;
+  	@include border-radius(3px);
 
 	h3 {
 		color:$secondaryColor;
@@ -89,7 +89,7 @@
 			position:absolute;
 			content:'';
 			top:33px;
-			border-radius:50%;
+		  	@include border-radius(50%);
 			background:#fff;
 		}
 
@@ -100,7 +100,7 @@
 		&:nth-of-type(even) {
 			float:right;
 
-			.timeline-item-container:before , .timeline-item-container:after { transform:rotate(-180deg); }
+			.timeline-item-container:before , .timeline-item-container:after { @include transform(rotate(-180deg)); }
 			.timeline-item-container:before { left:-29px; }
 			.timeline-item-container:after { left:-28px; }
 		}

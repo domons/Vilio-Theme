@@ -72,7 +72,7 @@
 
 		> ul {
 			a {
-				transition:all .2s ease-in-out;
+			  	@include single-transition(all, .2s, ease-in-out);
 			}
 
 			> li {
@@ -96,7 +96,7 @@
 						bottom:-3px;
 						left:0;
 						z-index:6;
-						border-radius:4px;
+					  	@include border-radius(4px);
 				  	}
 				}
 
@@ -118,7 +118,7 @@
 					position:absolute;
 					background:rgba(#15192c, 0.95);
 					padding:15px 10px;
-				  	transition:all .2s ease-in-out;
+				  	@include single-transition(all, .2s, ease-in-out);
 				  	top:50%;
 				  	z-index:50;
 
@@ -157,7 +157,7 @@
 		cursor:pointer;
 		display:none;
 		margin-top:5px;
-		transition:all .2s ease-in-out;
+	  	@include single-transition(all, .2s, ease-in-out);
 
 		&.fa-times {
 			position:fixed;
@@ -180,11 +180,11 @@
 			visibility:hidden;
 			opacity:0;
 			left:-100%;
-			transition:all .3s ease-in-out;
+		  	@include single-transition(all, .3s, ease-in-out);
 
 			ul {
-				display:flex;
-				flex-direction:column;
+				@include display-flex;
+				@include flex-direction(column);
 				align-items:center;
 				justify-content:center;
 				height:100%;

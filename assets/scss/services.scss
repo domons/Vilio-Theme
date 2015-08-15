@@ -1,17 +1,17 @@
 /* Services */
 .services {
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
+	@include display-flex;
+	@include flex-direction(row);
+	@include justify-content(space-between);
 	margin:90px 0 50px;
 }
 
 .service {
 	width:30%;
 	text-align:center;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
+	@include display-flex;
+	@include flex-direction(column);
+	@include justify-content(center);
 
 	.fa {
 		font-size:100px;
@@ -25,7 +25,9 @@
 		margin:25px 0;
 	}
 
-	.fa, h2 { transition:all .3s ease-in-out; }
+	.fa, h2 {
+		@include single-transition(all, .3s, ease-in-out);
+	}
 
 	p {
 		color:#5b667d;
@@ -47,7 +49,7 @@
 
 @media (max-width:800px) {
   	.services {
-  		flex-direction:column;
+	  	@include flex-direction(column);
   		margin:30px 0;
   	}
 

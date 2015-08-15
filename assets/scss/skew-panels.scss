@@ -24,7 +24,7 @@
 	}
 
 	&:before {
-		transform:skew(-45deg);
+	  	@include transform(skew(-45deg));
 		left:-25%;
 	}
 
@@ -58,7 +58,7 @@
 		width:100%;
 		height:100%;
 		background:#0f1320;
-		transform:skew(-45deg);
+	  	@include transform(skew(-45deg));
 		top:0;
 		left:55%;
 		z-index:2;
@@ -70,8 +70,8 @@
 		background:$primaryColor;
 		top:-50%;
 		left:30%;
-		transform:rotate(45deg);
 		z-index:1;
+	  	@include transform(rotate(45deg));
 	}
 }
 
@@ -94,7 +94,7 @@
 		padding-bottom:58%;
 		position:relative;
 		overflow:hidden;
-		border-radius:4px;
+	  	@include border-radius(4px);
 
 		iframe {
 			position:absolute;

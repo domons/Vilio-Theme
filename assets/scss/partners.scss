@@ -14,15 +14,13 @@
 	}
 
 	a {
-		filter:grayscale(100%);
-		-webkit-filter:grayscale(100%);
-		opacity:0.3;
-		transition:all .3s ease-in-out;
+	 	opacity:0.3;
+		@include filter(grayscale(100%));
+	  	@include single-transition(all, .3s, ease-in-out);
 
 		&:hover {
 			opacity:1;
-			filter:grayscale(0%);
-			-webkit-filter:grayscale(0%);
+		  	@include filter(grayscale(0%));
 		}
 	}
 }
@@ -42,10 +40,10 @@
 	&:before {
 	  	width:50%;
 		left:-76px;
-		transform:skew(-45deg);
+		@include transform(skew(-45deg));
 
 		@media (max-width:1200px) {
-		  	transform:skew(0deg);
+		 	@include transform(skew(0deg));
 		}
 	}
 

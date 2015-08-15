@@ -1,4 +1,6 @@
-* { box-sizing:border-box; }
+* {
+  	@include box-sizing(border-box);
+}
 
 html { font-size:62.5%; }
 
@@ -13,8 +15,6 @@ body {
 	background:#fff;
 }
 
-::selection { background:rgba($secondaryColor, 0.25); }
-::-moz-selection { background:rgba($secondaryColor, 0.25); }
 
 .center {
 	max-width:1200px;
@@ -67,12 +67,12 @@ p b, p strong {
 		width:24px;
 		height:24px;
 		border:1px solid #454c5d;
-		border-radius:50%;
+	  	@include border-radius(50%);
 		font-size:13px;
 		text-align:center;
 		line-height:22px;
 		vertical-align:middle;
-		transition:all .2s ease-in-out;
+	  	@include single-transition(all, .2s, ease-in-out);
 
 		&:hover {
 			color:$secondaryColor;
@@ -83,9 +83,9 @@ p b, p strong {
 
 /* Buttons */
 .btn {
-	border-radius:4px;
+  	@include border-radius(4px);
 	display:inline-block;
-	transition:all .2s ease-in-out;
+  	@include single-transition(all, .2s, ease-in-out);
 }
 
 .btn-small {
@@ -168,7 +168,7 @@ p b, p strong {
 	margin-top:-25px;
   	border:2px solid $primaryColor;
   	border-right:0;
-	transition:all .2s ease-in-out;
+  	@include single-transition(all, .2s, ease-in-out);
 
 	&:hover {
 		color:$primaryColor;
@@ -218,7 +218,7 @@ p b, p strong {
 	a {
 		color:#a1aec8;
 		font-size:14px;
-		transition:all .2s ease-in-out;
+		@include single-transition(all, .2s, ease-in-out);
 
 		&:hover {
 			color:$primaryColor;

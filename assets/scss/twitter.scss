@@ -2,8 +2,8 @@
 .twitter-panel {
   	padding:25px;
   	min-height:150px;
-  	display:flex;
-  	flex-direction:row;
+	@include display-flex;
+	@include flex-direction(row);
 
 	.fa-twitter {
 		color:$secondaryColor;
