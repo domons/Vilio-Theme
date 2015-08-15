@@ -40,7 +40,7 @@
 			display:block;
 			top:33px;
 		  	@include transform(rotate(45deg));
-		  	@include single-transition(background, .2s, ease-in-out);
+		  	@include transition(background .2s ease-in-out);
 		}
 
 		&:before {

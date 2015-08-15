@@ -67,7 +67,7 @@
 		padding-bottom:55%;
 		background-position:center top;
 		background-size:cover;
-	 	@include single-transition(all, 1s, ease-in-out);
+	 	@include transition(all 1s ease-in-out);
 	}
 
 	&:hover .case-img {

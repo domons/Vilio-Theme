@@ -72,7 +72,7 @@ p b, p strong {
 		line-height:22px;
 		vertical-align:middle;
 	  	@include border-radius(50%);
-	  	@include single-transition(all, .2s, ease-in-out);
+	  	@include transition(all .2s ease-in-out);
 
 		&:hover {
 			color:$secondaryColor;
@@ -85,7 +85,7 @@ p b, p strong {
 .btn {
   	display:inline-block;
   	@include border-radius(4px);
-  	@include single-transition(all, .2s, ease-in-out);
+  	@include transition(all .2s ease-in-out);
 }
 
 .btn-small {
@@ -168,7 +168,7 @@ p b, p strong {
 	margin-top:-25px;
   	border:2px solid $primaryColor;
   	border-right:0;
-  	@include single-transition(all, .2s, ease-in-out);
+  	@include transition(all .2s ease-in-out);
 
 	&:hover {
 		color:$primaryColor;
@@ -218,7 +218,7 @@ p b, p strong {
 	a {
 		color:#a1aec8;
 		font-size:14px;
-		@include single-transition(all, .2s, ease-in-out);
+		@include transition(all .2s ease-in-out);
 
 		&:hover {
 			color:$primaryColor;
