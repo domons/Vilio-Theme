@@ -1,11 +1,11 @@
-mixin service_item(icon, name, snippet, url)
-	.service
+mixin service_item(delay, icon, name, snippet, url)
+	.service.wow.fadeIn(data-wow-duration="1s" data-wow-delay=delay)
 		a(href=url).btn-small.btn-outline.btn-hover-fill Case Studies
 		i(class="fa "+icon)
 		h2= name
 		p= snippet
 
 section.services
-	+service_item('fa-rocket', 'Digital Strategy', 'We’ll create your strategy through white-hat methods to help you reach your business goals.', '#')
-	+service_item('fa-optin-monster', 'Branding', 'Drive your brand awareness through attention grabbing graphic design, visual identification and banner adverts using our expertise combined with your corporate vision and voice.', '#')
-	+service_item('fa-user-secret', 'Web Development', 'We design responsive websites. This means your website will be ready to use on any device from smartphones to desktop computers and iPads to projector screens.', '#')
+	+service_item('1s', 'fa-rocket', 'Digital Strategy', 'We’ll create your strategy through white-hat methods to help you reach your business goals.', '#')
+	+service_item('0.5s', 'fa-optin-monster', 'Branding', 'Drive your brand awareness through attention grabbing graphic design, visual identification and banner adverts using our expertise combined with your corporate vision and voice.', '#')
+	+service_item('1s', 'fa-user-secret', 'Web Development', 'We design responsive websites. This means your website will be ready to use on any device from smartphones to desktop computers and iPads to projector screens.', '#')

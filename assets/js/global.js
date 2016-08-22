@@ -29,4 +29,7 @@ $(function() {
 		navClass: ['review-prev', 'review-next'],
 		navText: ['Prev', 'Next']
 	});
+
+	// wow.js
+	new WOW().init();
 });

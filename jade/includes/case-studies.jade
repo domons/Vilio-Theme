@@ -10,10 +10,10 @@ mixin case_item(img, title, category, snippet, url)
 section.case-studies
 	.center
 		header.header-caption
-			h2.heading Case studies
-			em.caption Take a look at our happy customers!
+			h2.heading.wow.fadeInDown(data-wow-duration="1s") Case studies
+			em.caption.wow.fadeInUp(data-wow-duration="1s") Take a look at our happy customers!
 
-		.case-studies-panels
+		.case-studies-panels.wow.fadeIn(data-wow-duration="1s" data-wow-delay="0.5s")
 			+case_item('//placeimg.com/640/480/any', 'One Tree', 'Social Media Marketing', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
 			+case_item('//placeimg.com/640/480/animals', 'Verseca Inc.', 'Branding', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')
 			+case_item('//placeimg.com/640/480/architecture', 'Querry Ltd', 'Web Development', 'Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus', '#')

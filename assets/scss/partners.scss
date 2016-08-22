@@ -15,7 +15,7 @@
 
 	a {
 	 	opacity:0.3;
-		@include filter(grayscale(100%)); 
+		@include filter(grayscale(100%));
 	  	@include transition(all .3s ease-in-out);
 
 		&:hover {
