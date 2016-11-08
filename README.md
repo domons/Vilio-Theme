@@ -1,8 +1,6 @@
 # Vilio Theme
 
-[![Portfolio](https://img.shields.io/badge/My-portfolio-FA143A.svg)](http://domons.net "Dominik Barylski Portfolio | Frontend & Backend Developer")
-[![Poisoned Unit](https://img.shields.io/badge/Poisoned-Unit-5a3a76.svg)](http://poisoned-unit.com "Poisoned Unit Websites")
-[![PayPal donate button](https://img.shields.io/badge/PayPal-donate-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZUF8R2BZDG6L6 "Donate once-off to this project using PayPal")
+[![Wisebird Agency](https://img.shields.io/badge/Wisebird-Agency-ed1c24.svg)](https://wisebird.pl "Wisebird Agency - Strony internetowe | Agencja reklamowa Łódź")
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Responsive HTML5 & CSS3 template.
