@@ -26,7 +26,7 @@ Graphics:
 - [David Tkocz Dribble](https://dribbble.com/davidtkocz)
 
 Code:
-- [Wisebird](https://wisebird.pl
+- [Wisebird](https://wisebird.pl)
 
 
 ---
