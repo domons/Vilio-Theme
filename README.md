@@ -26,7 +26,7 @@ Graphics:
 - [David Tkocz Dribble](https://dribbble.com/davidtkocz)
 
 Code:
-- [Dominik Barylski Portfolio](http://domons.net)
+- [Wisebird](https://wisebird.pl
 
 
 ---
