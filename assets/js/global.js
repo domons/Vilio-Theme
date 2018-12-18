@@ -2,8 +2,7 @@ $(function() {
 	// replaces # urls - you can remove this
 	$('a[href="#"]').each(function() {
 		var urls = [
-			'http://domons.net',
-			'http://poisoned-unit.com',
+			'https://wisebird.pl',
 			'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZUF8R2BZDG6L6',
 			'https://github.com/domons/Vilio-Theme'
 		];
